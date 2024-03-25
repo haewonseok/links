@@ -11,14 +11,14 @@
         width: 128px;
         height: 128px;
         object-fit: cover;
-        border-radius: 50px;
+        border-radius: 128px;
       }
 
-      .thumbnail {
+      .link-image {
         width: 48px;
         height: 48px;
-        border-radius: 50px;
         object-fit: cover;
+        border-radius: 48px;
       }
 
       body {
@@ -36,12 +36,39 @@
 
       .link {
         background-color: #f9bc60;
+        display: flex;
+        align-items: center;
+        padding: 5px;
       }
 
       .link a {
         color: #001e1d;
+        text-align: center;
+        flex-grow: 1;
       }
 
+      .name {
+        color: #fffffe;
+        display: flex;
+        justify-content: center;
+      }
+
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
     
       
     </style>
@@ -75,7 +102,7 @@
     </div>
 
     <div class="link">
-      <img src="/thumbnails/Chicago Booth Logo.jpeg" alt="Chicago Booth Logo">
+      <img src="/thumbnails/Chicago Booth Logo.jpeg" alt="Chicago Booth Logo" class="link-image">
       <a target="_blank"
        href="https://www.chicagobooth.edu/">School: Chicago Booth</a>
     </div>
